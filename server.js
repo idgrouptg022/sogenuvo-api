@@ -37,6 +37,8 @@ const countryRouter = require('./routes/countries/crud')
 
 const agencyRouter = require('./routes/agencies/crud')
 const agencyAuthRouter = require('./routes/agencies/auth')
+const administratorRouter = require('./routes/administrators/crud')
+const administratorAuthRouter = require('./routes/administrators/auth')
 const ownerAuthRouter = require('./routes/owner/auth')
 
 const carRouter = require('./routes/cars/crud')
@@ -129,6 +131,8 @@ app.use(`/${process.env.API_PREFIX_URL}/countries`, countryRouter)
 
 app.use(`/${process.env.API_PREFIX_URL}/agencies`, agencyRouter)
 app.use(`/${process.env.API_PREFIX_URL}/auth/agencies`, agencyAuthRouter)
+app.use(`/${process.env.API_PREFIX_URL}/administrators`, administratorRouter)
+app.use(`/${process.env.API_PREFIX_URL}/auth/administrators`, administratorAuthRouter)
 app.use(`/${process.env.API_PREFIX_URL}/auth/owners`, ownerAuthRouter)
 
 app.use(`/${process.env.API_PREFIX_URL}/cars`, carRouter)

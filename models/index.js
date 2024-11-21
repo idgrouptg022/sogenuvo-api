@@ -90,6 +90,7 @@ db.additionnalEmails = require('./additionalEmailModel')(sequelize, DataTypes)
 db.categories = require('./categoryModel')(sequelize, DataTypes)
 db.cars = require('./carModel')(sequelize, DataTypes)
 db.carsPhotos = require('./carPhotoModel')(sequelize, DataTypes)
+db.administrators = require('./administratorModel')(sequelize, DataTypes)
 
 
 
